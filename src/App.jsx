@@ -1015,6 +1015,76 @@ const SIDD_PROFILE = {
   workStyle:{teamSize:"Small (2–8 people)",environment:"Remote-friendly or hybrid",pace:"Medium to fast",structure:"Light structure, clear outcomes",autonomy:"High — needs ownership",managerType:"Coach-style, not command-and-control",culture:"Mission-driven, intellectually curious, low politics",companyStage:"Seed to Series B, or agile team inside larger org"},
 };
 
+// ─── CURRENT STATE (from Notion — March 2026) ─────────────────────────────────
+const CURRENT_STATE = {
+  theme: "The Year I Stopped Planning and Started Moving",
+  themeQuote: "This is the year of reps. Not the perfect plan.",
+  lastUpdated: "March 2026",
+  bigPicture: {
+    byDecember2026: [
+      "PMM role at AI/SaaS/EdTech company — $75–95K, remote/hybrid, leaves time for creator work",
+      "YouTube live with 30+ videos published — consistent, not viral",
+      "Financially independent — own rent, groceries, travel",
+      "Creative studio with Bino has clear direction and first clients",
+      "Traveled somewhere meaningful",
+      "Community or accountability partner on the same path",
+    ],
+    successFeels: "Making money. Creating content consistently. Not giving in. Looking back and seeing movement.",
+    failureFeels: "Still no income, YouTube never launched, still in searching mode with nothing to show.",
+  },
+  horizons: [
+    {label:"NOW (2026)", title:"The Bridge", items:[
+      "Target: Product Marketing Manager at AI/SaaS/EdTech",
+      "Salary: $75–95K, remote/hybrid",
+      "Non-negotiable: Must leave time for creator work",
+      "Fallback: Content Marketing Coordinator → promote to PMM in 12 months",
+    ]},
+    {label:"2–3 Years", title:"The Hybrid", items:[
+      "PMM + YouTube channel + ghostwriting clients",
+      "Multiple income streams toward independence",
+      "Bino Productions has paying clients",
+    ]},
+    {label:"5 Years", title:"The Dream", items:[
+      "Creative Strategist / Head of Content, or full-time creator",
+      "Content as primary income (YouTube, digital products, courses)",
+      "Location-independent, global creator community",
+    ]},
+  ],
+  weeklyTargets: {
+    tailoredApplications: "10–15",
+    outreachMessages: "20–30",
+    coffeeChats: "4–6",
+    referralsRequested: "6–10",
+    followUps: "10+",
+    linkedInPosts: "4–6",
+    sprintPoints: "50+",
+  },
+  activeProjects: [
+    {name:"Motion Creative Strategy Bootcamp", status:"In progress", desc:"Building creative strategy skills"},
+    {name:"YouTube Channel Launch", status:"Pre-launch", desc:"Goal: 30+ videos by Dec 2026"},
+    {name:"Newsletter / Substack", status:"Re-starting", desc:"Written content platform"},
+    {name:"Bino Productions", status:"Active", desc:"Creative studio with co-founder — seeking first clients"},
+    {name:"AI App Portfolio", status:"35 apps built", desc:"Demonstrating AI product capability"},
+    {name:"Job Search Sprint", status:"Active — ~14 weeks remaining", desc:"Systematic RGA-driven search targeting mid-year 2026"},
+  ],
+  rgaChecklist: [
+    "Ask for a referral",
+    "Send warm outreach to a hiring manager",
+    "Have a coffee chat or info interview",
+    "Follow up on an active conversation",
+    "Submit a tailored application",
+    "Deliver a VVP (Value Validation Project)",
+    "Do a mock or real interview",
+  ],
+  anchor: {
+    why: "To break down overwhelming complexity SO THAT others can take confident action.",
+    redDressFilter: "If the role is 70%+ solo technical execution with no storytelling — walk past it.",
+    rule: "70% RGAs / 30% support. If the ratio flips, stop everything and send one outreach message.",
+  },
+  coreValues: ["Purpose","Freedom","Curiosity","Helpfulness & Contribution","Expression"],
+  identity: "A quiet observer who feels deeply, curates constantly, and wants to express more. Building in private for a long time — the work now is to build in public.",
+};
+
 // ─── STYLE TOKENS ─────────────────────────────────────────────────────────────
 const BG     = "#F8F7F4";
 const CARD   = "#FFFFFF";
@@ -1065,7 +1135,7 @@ export default function SiddRoleOS() {
   const [freqF, setFreqF]         = useState("All");
   const [senLevel, setSenLevel]   = useState("mid");
   const [mView, setMView]         = useState("technical");
-  const [pView, setPView]         = useState("personality");
+  const [pView, setPView]         = useState("now");
 
   const role = ROLES.find(r => r.id === activeId);
   const tier = TIER_STYLE[role.tier];
@@ -1628,7 +1698,7 @@ export default function SiddRoleOS() {
         <div>
           {/* Sub-nav */}
           <div style={{display:"flex", gap:"6px", marginBottom:"16px", flexWrap:"wrap"}}>
-            {[["personality","Personality"],["strengths","Strengths"],["interests","Interests & Motivators"],["skills","Skills Map"],["experience","Experience"],["certs","Certifications"],["energy","Energy & Blindspots"]].map(([v,label])=>(
+            {[["now","🎯 Current State"],["personality","Personality"],["strengths","Strengths"],["interests","Interests & Motivators"],["skills","Skills Map"],["experience","Experience"],["certs","Certifications"],["energy","Energy & Blindspots"]].map(([v,label])=>(
               <button key={v} onClick={()=>setPView(v)} style={{
                 padding:"7px 14px", borderRadius:"6px", cursor:"pointer",
                 border: pView===v ? "1.5px solid #0891B2" : `1.5px solid ${BORDER}`,
@@ -1638,6 +1708,101 @@ export default function SiddRoleOS() {
               }}>{label}</button>
             ))}
           </div>
+
+          {/* CURRENT STATE */}
+          {pView==="now" && (
+            <div>
+              {/* Theme Banner */}
+              <div style={{background:"linear-gradient(135deg, #0F172A 0%, #1E3A5F 100%)", borderRadius:"12px", padding:"22px 24px", marginBottom:"14px", color:"#FFF"}}>
+                <div style={{fontSize:"10px", fontWeight:700, letterSpacing:"0.1em", fontFamily:"'Courier New', monospace", color:"#67E8F9", marginBottom:"6px"}}>2026 THEME</div>
+                <div style={{fontSize:"20px", fontWeight:700, marginBottom:"4px"}}>{CURRENT_STATE.theme}</div>
+                <div style={{fontSize:"12px", color:"#94A3B8", fontStyle:"italic"}}>{CURRENT_STATE.themeQuote}</div>
+              </div>
+
+              {/* Anchor / Why */}
+              <div style={{background:"#FFFBEB", border:"1px solid #FDE68A", borderRadius:"10px", padding:"16px", marginBottom:"14px"}}>
+                <div style={{fontSize:"10px", color:"#92400E", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>THE ANCHOR — YOUR WHY</div>
+                <div style={{fontSize:"13px", color:"#78350F", fontWeight:700, marginBottom:"6px", lineHeight:1.4}}>"{CURRENT_STATE.anchor.why}"</div>
+                <div style={{fontSize:"11px", color:"#92400E", marginBottom:"4px"}}>🔴 {CURRENT_STATE.anchor.redDressFilter}</div>
+                <div style={{fontSize:"11px", color:"#92400E"}}>📐 {CURRENT_STATE.anchor.rule}</div>
+              </div>
+
+              {/* By December 2026 */}
+              <div style={{background:"#EFF6FF", border:"1px solid #BFDBFE", borderRadius:"10px", padding:"16px", marginBottom:"14px"}}>
+                <div style={{fontSize:"10px", color:"#1E40AF", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"10px"}}>IF 2026 GOES PERFECTLY — BY DECEMBER</div>
+                {CURRENT_STATE.bigPicture.byDecember2026.map((g,i)=>(
+                  <div key={i} style={{display:"flex", gap:"8px", alignItems:"flex-start", marginBottom:"6px"}}>
+                    <div style={{width:"6px", height:"6px", borderRadius:"50%", background:"#3B82F6", marginTop:"5px", flexShrink:0}}/>
+                    <div style={{fontSize:"11px", color:"#1E3A5F", lineHeight:1.4}}>{g}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Horizons */}
+              <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr", gap:"10px", marginBottom:"14px"}}>
+                {CURRENT_STATE.horizons.map((h,i)=>(
+                  <div key={i} style={{background: i===0?"#ECFDF5":i===1?"#FEF3C7":"#EDE9FE", border:`1px solid ${i===0?"#A7F3D0":i===1?"#FDE68A":"#C4B5FD"}`, borderRadius:"10px", padding:"14px"}}>
+                    <div style={{fontSize:"9px", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", color:i===0?"#065F46":i===1?"#92400E":"#5B21B6", marginBottom:"4px"}}>HORIZON — {h.label}</div>
+                    <div style={{fontSize:"13px", fontWeight:700, color:i===0?"#064E3B":i===1?"#78350F":"#4C1D95", marginBottom:"8px"}}>{h.title}</div>
+                    {h.items.map((item,j)=>(
+                      <div key={j} style={{fontSize:"10px", color:i===0?"#065F46":i===1?"#92400E":"#5B21B6", lineHeight:1.5, marginBottom:"3px"}}>• {item}</div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+
+              {/* Active Projects */}
+              <div style={{fontSize:"10px", color:TEXT3, fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>ACTIVE PROJECTS — MARCH 2026</div>
+              <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"8px", marginBottom:"14px"}}>
+                {CURRENT_STATE.activeProjects.map((p,i)=>(
+                  <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 14px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                    <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:"4px"}}>
+                      <div style={{fontSize:"12px", fontWeight:700, color:TEXT}}>{p.name}</div>
+                      <div style={{fontSize:"9px", padding:"2px 8px", borderRadius:"4px", fontWeight:600,
+                        background: p.status.includes("Active")?"#ECFDF5":p.status.includes("progress")?"#FEF3C7":"#F0F9FF",
+                        color: p.status.includes("Active")?"#065F46":p.status.includes("progress")?"#92400E":"#0369A1",
+                        border:`1px solid ${p.status.includes("Active")?"#A7F3D0":p.status.includes("progress")?"#FDE68A":"#BAE6FD"}`,
+                      }}>{p.status}</div>
+                    </div>
+                    <div style={{fontSize:"10px", color:TEXT3, lineHeight:1.4}}>{p.desc}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Weekly Targets + RGA Checklist side by side */}
+              <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"10px", marginBottom:"14px"}}>
+                <div style={{background:"#F0FDFA", border:"1px solid #99F6E4", borderRadius:"10px", padding:"14px"}}>
+                  <div style={{fontSize:"10px", color:"#0F766E", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>WEEKLY TARGETS</div>
+                  {Object.entries(CURRENT_STATE.weeklyTargets).map(([k,v])=>(
+                    <div key={k} style={{display:"flex", justifyContent:"space-between", marginBottom:"4px"}}>
+                      <span style={{fontSize:"10px", color:"#115E59", textTransform:"capitalize"}}>{k.replace(/([A-Z])/g,' $1')}</span>
+                      <span style={{fontSize:"10px", fontWeight:700, color:"#0F766E", fontFamily:"'Courier New', monospace"}}>{v}</span>
+                    </div>
+                  ))}
+                </div>
+                <div style={{background:"#FEF2F2", border:"1px solid #FECACA", borderRadius:"10px", padding:"14px"}}>
+                  <div style={{fontSize:"10px", color:"#991B1B", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>DAILY RGA CHECKLIST — Revenue-Generating Activities</div>
+                  {CURRENT_STATE.rgaChecklist.map((r,i)=>(
+                    <div key={i} style={{fontSize:"10px", color:"#7F1D1D", marginBottom:"4px"}}>☐ {r}</div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Core Values + Identity */}
+              <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"10px"}}>
+                <div style={{background:"#EDE9FE", border:"1px solid #C4B5FD", borderRadius:"10px", padding:"14px"}}>
+                  <div style={{fontSize:"10px", color:"#5B21B6", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>CORE VALUES</div>
+                  {CURRENT_STATE.coreValues.map((v,i)=>(
+                    <div key={i} style={{fontSize:"11px", color:"#4C1D95", fontWeight:600, marginBottom:"4px"}}>{i+1}. {v}</div>
+                  ))}
+                </div>
+                <div style={{background:"#F8FAFC", border:`1px solid ${BORDER}`, borderRadius:"10px", padding:"14px"}}>
+                  <div style={{fontSize:"10px", color:TEXT3, fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>IDENTITY — WHO I AM NOW</div>
+                  <div style={{fontSize:"11px", color:TEXT2, lineHeight:1.6, fontStyle:"italic"}}>{CURRENT_STATE.identity}</div>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* PERSONALITY */}
           {pView==="personality" && (
