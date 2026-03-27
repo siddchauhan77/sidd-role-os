@@ -930,6 +930,91 @@ const MARKET_DATA = {
   },
 };
 
+// ─── SIDD'S PROFILE DATA ──────────────────────────────────────────────────────
+const SIDD_PROFILE = {
+  personality:{
+    mbti:{type:"ENFP-A",label:"The Campaigner",traits:[
+      {name:"Extraverted",pct:57},{name:"Intuitive",pct:60},{name:"Feeling",pct:60},{name:"Prospecting",pct:54},{name:"Assertive",pct:53}
+    ]},
+    enneagram:{type:"Type 4",label:"The Individualist",desc:"Core drive: finding authentic identity. Fears being ordinary. Channels emotions into creative work."},
+    archetypes:["Enthusiast (CareerExplorer)","Creator/Thinker (Truity)","Consultant/Creator/Artist (Dimensional Me)"],
+  },
+  strengths:{
+    gallup:[
+      {name:"Connectedness",desc:"Sees links between all things, builds bridges across divides, gives others meaning and purpose"},
+      {name:"Input",desc:"Collects and archives information voraciously; simplifies complex ideas for others"},
+      {name:"Learner",desc:"The process of learning excites more than the outcome; thrives in fast-moving knowledge environments"},
+      {name:"Context",desc:"Understands the present by studying the past; uses history to anticipate opportunities"},
+      {name:"Futuristic",desc:"Vivid visionary; energizes others with detailed pictures of what could be"},
+    ],
+    high5:[
+      {name:"Philomath",desc:"Loves acquiring knowledge across many domains"},
+      {name:"Coach",desc:"Discovers potential in people, compelled to nurture growth"},
+      {name:"Thinker",desc:"Needs reflection time; intellectual discussion is energizing"},
+      {name:"Storyteller",desc:"Master communicator; needs to express through words"},
+      {name:"Analyst",desc:"Finds clarity in complex data; logic over emotion for decisions"},
+    ],
+  },
+  interests:[
+    {area:"Theory Development & Research",pct:93},
+    {area:"Coaching & Mentoring",pct:90},
+    {area:"Creative Production",pct:87},
+    {area:"Quantitative Analysis",pct:71},
+    {area:"Application of Technology",pct:53},
+    {area:"Managing People",pct:27},
+    {area:"Enterprise Control",pct:16},
+    {area:"Influencing Others (Sales)",pct:2},
+  ],
+  motivators:[
+    {name:"Positioning",score:10},{name:"Lifestyle",score:10},{name:"Altruism",score:10},
+    {name:"Variety",score:9},{name:"Intellectual Challenge",score:8},{name:"Power & Influence",score:8},
+    {name:"Security",score:4},{name:"Financial Gain",score:1},{name:"Prestige",score:0},
+  ],
+  skills:{
+    motivated:["Strategize","Synthesize","Generate Ideas","Visualize","Teach/Train","Adapt to Change","Teamwork","Initiate Change","Act as Liaison","Plan & Organize","Mediate","Portray Images","Multi-task","Design"],
+    developmental:["Write","Lead","Counsel/Coach","Sell","Make Decisions","Deal with Ambiguity","Manage Time","Mentor","Read for Information"],
+    burnout:["Budget","Negotiate","Motivate Others (forced)","Classify/Categorize","Mechanical Research","Test/Quality Check"],
+  },
+  experience:[
+    {role:"AI Product Manager",company:"News Corp (Extern)",period:"Feb 2026–Present",highlights:["Competitive analysis across 7 platforms","10+ page PRD","6 success metrics defined"]},
+    {role:"Brand/Content Strategy",company:"TikTok (Extern)",period:"Jan–Mar 2026",highlights:["Led brand strategy & competitive analysis","Built content system with template packs","Brand Playbook with voice-tone & mood boards"]},
+    {role:"AI Automation Specialist",company:"Wayfair (Extern)",period:"Oct 2025–Jan 2026",highlights:["Built n8n agents for trend detection","Competitor tracking automation","Live dashboard with AI-generated insights"]},
+    {role:"UGC Creator",company:"CreatorGrid",period:"Nov 2025–Mar 2026",highlights:["Short-form video for Todoist, Superhuman, Epidemic Sound","Weekly content sprints","Creator brand strategy"]},
+    {role:"Production Associate",company:"Confidential",period:"Jan–Dec 2024",highlights:["Product dev and marketing projects","Dashboards with Pandas","Cross-team coordination"]},
+    {role:"Product Analyst",company:"Accenture",period:"Sep 2021–Nov 2023",highlights:["Power BI dashboards for $200M+ projects","AWS migration","Market opportunity identification"]},
+    {role:"Data Science Consultant",company:"Favor Delivery",period:"Dec 2020–May 2021",highlights:["CNN model on 1M+ receipt images","OCR pipelines","UX optimization"]},
+    {role:"Co-founder / Creative Director",company:"Bino Productions",period:"2019–2022",highlights:["Photo/video production","Client strategy presentations","NatGeo featured photography"]},
+  ],
+  certifications:{
+    ai:{count:11,items:["AWS AI Practitioner","IBM AI Developer","SAP AI","OpenAI","Dataiku","Lindy AI Operator","HeyGen","Duke AI PM","Google AI Essentials","Make AI Automation","365 AI Engineer"]},
+    marketing:{count:8,items:["HubSpot Inbound","Surfer SEO","Adobe Content Creator","Motion Creative Strategist","PGA Ghostwriting Academy","ContentOS","LinkedInOS","Creator MBA"]},
+    pm:{count:4,items:["Exec PM (UT Austin)","Productboard","Aha!","Ziplines PM"]},
+    data:{count:4,items:["MSBA (UT Austin)","Power BI","Tableau","Amplitude Foundations"]},
+    creative:{count:6,items:["Full-Time Filmmaker","DaVinci Resolve","Descript","Cut30","OnePeak Creative","Kolder Creative"]},
+    ux:{count:3,items:["Google UX Design","Uxcel UI/UX","Microsoft UX Design"]},
+  },
+  education:[
+    {degree:"MS Business Analytics",school:"McCombs, UT Austin",year:"2020–2021"},
+    {degree:"BS Public Health",school:"Texas A&M",year:"2016–2020"},
+    {degree:"Exec Program in Product Management",school:"UT Austin",year:"Mar–May 2025"},
+  ],
+  dealBreakers:["No cold sales (2nd percentile interest)","No pure execution / zero creative input","No 5-day office mandates","No Excel-only analyst roles","No environments where ideas are ignored","No roles with no learning path within 12 months"],
+  energizers:["Making YouTube travel videos","Writing (newsletter, scripts, long-form)","Small team collaboration and client calls","Photography shoots","Building AI automation agents from scratch","Teaching or explaining something understood","Reading/learning across topics"],
+  drainers:["Editing and revision cycles (especially others' work)","Debugging code for long stretches","Large group meetings with no clear purpose","Excel-only mechanical research tasks","Environments with no creative input","Working in isolation with no human feedback loop"],
+  blindSpots:[
+    {issue:"Ideas without execution",fix:"Strong in early creative phases, weak in follow-through. Set hard deadlines."},
+    {issue:"Keeps options open too long",fix:"Indecision and FOMO delay commitment. Use decision deadlines."},
+    {issue:"Doesn't advocate for own ideas",fix:"Creates and then backs away. Confidence in ideas must match confidence in selling them."},
+    {issue:"Avoids detail-oriented work",fix:"Systems, tracking, admin = energy drain. Must be offloaded or automated."},
+    {issue:"Not using full ambition",fix:"Effort orientation is present, but payoff thinking is not. Think bigger."},
+    {issue:"Implementation gap",fix:"Lack of interest in implementation details could hold back early career."},
+    {issue:"Perfectionism blocks shipping",fix:"Ideas stay drafts too long. Ship imperfect, iterate."},
+    {issue:"Rejection sensitivity",fix:"Needs context and next step with hard feedback, not just a verdict."},
+  ],
+  financials:{floor:"$3,000/mo",anchor:"$88–96K/yr (Accenture)",target3yr:"$10–20K/mo",dream:"$20–50K/mo"},
+  workStyle:{teamSize:"Small (2–8 people)",environment:"Remote-friendly or hybrid",pace:"Medium to fast",structure:"Light structure, clear outcomes",autonomy:"High — needs ownership",managerType:"Coach-style, not command-and-control",culture:"Mission-driven, intellectually curious, low politics",companyStage:"Seed to Series B, or agile team inside larger org"},
+};
+
 // ─── STYLE TOKENS ─────────────────────────────────────────────────────────────
 const BG     = "#F8F7F4";
 const CARD   = "#FFFFFF";
@@ -980,6 +1065,7 @@ export default function SiddRoleOS() {
   const [freqF, setFreqF]         = useState("All");
   const [senLevel, setSenLevel]   = useState("mid");
   const [mView, setMView]         = useState("technical");
+  const [pView, setPView]         = useState("personality");
 
   const role = ROLES.find(r => r.id === activeId);
   const tier = TIER_STYLE[role.tier];
@@ -1038,7 +1124,7 @@ export default function SiddRoleOS() {
           Sidd's Role OS — 23 Roles Ranked
         </div>
         <div style={{fontSize:"22px", fontWeight:700, lineHeight:1.25, color:TEXT, fontFamily:"Georgia, serif"}}>
-          {view==="market" ? <>What skills does the market demand?<br/><span style={{color:"#4F46E5"}}>Multi-source research. 2025–2026 data. Updated live.</span></> : <>What does the job actually demand?<br/><span style={{color:role.color}}>JD-sourced. Proof points mapped. Rank ordered.</span></>}
+          {view==="market" ? <>What skills does the market demand?<br/><span style={{color:"#4F46E5"}}>Multi-source research. 2025–2026 data. Updated live.</span></> : view==="profile" ? <>Know yourself before choosing a role.<br/><span style={{color:"#0891B2"}}>15+ assessments synthesized. Strengths mapped. Blindspots flagged.</span></> : <>What does the job actually demand?<br/><span style={{color:role.color}}>JD-sourced. Proof points mapped. Rank ordered.</span></>}
         </div>
       </div>
 
@@ -1047,6 +1133,7 @@ export default function SiddRoleOS() {
         {btn(view==="master", "#1A1A1A", ()=>setView("master"), "📊 Master Rank")}
         {btn(view==="detail", role.color, ()=>setView("detail"), "🔍 Role Detail")}
         {btn(view==="market", "#4F46E5", ()=>setView("market"), "📈 Market Intel")}
+        {btn(view==="profile", "#0891B2", ()=>setView("profile"), "👤 My Profile")}
         {view==="detail" && <span style={{marginLeft:"auto", fontSize:"11px", color:TEXT3, alignSelf:"center", fontFamily:"'Courier New', monospace"}}>Viewing: {role.short}</span>}
       </div>
 
@@ -1536,6 +1623,292 @@ export default function SiddRoleOS() {
         </div>
       )}
 
+      {/* ── MY PROFILE ── */}
+      {view==="profile" && (
+        <div>
+          {/* Sub-nav */}
+          <div style={{display:"flex", gap:"6px", marginBottom:"16px", flexWrap:"wrap"}}>
+            {[["personality","Personality"],["strengths","Strengths"],["interests","Interests & Motivators"],["skills","Skills Map"],["experience","Experience"],["certs","Certifications"],["energy","Energy & Blindspots"]].map(([v,label])=>(
+              <button key={v} onClick={()=>setPView(v)} style={{
+                padding:"7px 14px", borderRadius:"6px", cursor:"pointer",
+                border: pView===v ? "1.5px solid #0891B2" : `1.5px solid ${BORDER}`,
+                background: pView===v ? "#0891B2" : CARD,
+                color: pView===v ? "#FFF" : TEXT2,
+                fontSize:"11px", fontWeight:600, letterSpacing:"0.02em", transition:"all 0.12s",
+              }}>{label}</button>
+            ))}
+          </div>
+
+          {/* PERSONALITY */}
+          {pView==="personality" && (
+            <div>
+              <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"12px", marginBottom:"14px"}}>
+                {/* MBTI Card */}
+                <div style={{background:"#EEF2FF", border:"1px solid #C7D2FE", borderRadius:"10px", padding:"18px 20px"}}>
+                  <div style={{fontSize:"10px", color:"#6366F1", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"6px"}}>16PERSONALITIES</div>
+                  <div style={{fontSize:"24px", fontWeight:700, color:"#312E81", marginBottom:"2px"}}>{SIDD_PROFILE.personality.mbti.type}</div>
+                  <div style={{fontSize:"12px", color:"#4338CA", marginBottom:"12px"}}>{SIDD_PROFILE.personality.mbti.label}</div>
+                  {SIDD_PROFILE.personality.mbti.traits.map(t=>(
+                    <div key={t.name} style={{marginBottom:"6px"}}>
+                      <div style={{display:"flex", justifyContent:"space-between", fontSize:"10px", color:"#4338CA", marginBottom:"2px"}}>
+                        <span>{t.name}</span><span style={{fontWeight:700, fontFamily:"'Courier New', monospace"}}>{t.pct}%</span>
+                      </div>
+                      <div style={{height:"4px", background:"#C7D2FE", borderRadius:"2px", overflow:"hidden"}}>
+                        <div style={{width:`${t.pct}%`, height:"100%", background:"#4F46E5", borderRadius:"2px"}}/>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {/* Enneagram Card */}
+                <div style={{background:"#FDF4FF", border:"1px solid #F0ABFC", borderRadius:"10px", padding:"18px 20px"}}>
+                  <div style={{fontSize:"10px", color:"#A855F7", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"6px"}}>ENNEAGRAM</div>
+                  <div style={{fontSize:"24px", fontWeight:700, color:"#581C87", marginBottom:"2px"}}>{SIDD_PROFILE.personality.enneagram.type}</div>
+                  <div style={{fontSize:"12px", color:"#7C3AED", marginBottom:"10px"}}>{SIDD_PROFILE.personality.enneagram.label}</div>
+                  <div style={{fontSize:"11px", color:"#6B21A8", lineHeight:1.6}}>{SIDD_PROFILE.personality.enneagram.desc}</div>
+                </div>
+              </div>
+              {/* Archetypes */}
+              <div style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 16px"}}>
+                <div style={{fontSize:"10px", color:TEXT3, fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>OTHER ARCHETYPES</div>
+                <div style={{display:"flex", gap:"8px", flexWrap:"wrap"}}>
+                  {SIDD_PROFILE.personality.archetypes.map(a=>(
+                    <span key={a} style={{padding:"5px 12px", borderRadius:"5px", background:"#F9FAFB", border:`1px solid ${BORDER}`, fontSize:"11px", color:TEXT2, fontWeight:500}}>{a}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* STRENGTHS */}
+          {pView==="strengths" && (
+            <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"14px"}}>
+              {/* Gallup */}
+              <div>
+                <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>Gallup CliftonStrengths Top 5</div>
+                {SIDD_PROFILE.strengths.gallup.map((s,i)=>(
+                  <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 14px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                    <div style={{display:"flex", gap:"8px", alignItems:"center", marginBottom:"4px"}}>
+                      <span style={{fontSize:"12px", fontWeight:700, color:"#0891B2", fontFamily:"'Courier New', monospace"}}>#{i+1}</span>
+                      <span style={{fontSize:"13px", fontWeight:700, color:TEXT}}>{s.name}</span>
+                    </div>
+                    <div style={{fontSize:"10px", color:TEXT3, lineHeight:1.5}}>{s.desc}</div>
+                  </div>
+                ))}
+              </div>
+              {/* HIGH5 */}
+              <div>
+                <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>HIGH5 Strengths Test Top 5</div>
+                {SIDD_PROFILE.strengths.high5.map((s,i)=>(
+                  <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 14px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                    <div style={{display:"flex", gap:"8px", alignItems:"center", marginBottom:"4px"}}>
+                      <span style={{fontSize:"12px", fontWeight:700, color:"#7C3AED", fontFamily:"'Courier New', monospace"}}>#{i+1}</span>
+                      <span style={{fontSize:"13px", fontWeight:700, color:TEXT}}>{s.name}</span>
+                    </div>
+                    <div style={{fontSize:"10px", color:TEXT3, lineHeight:1.5}}>{s.desc}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* INTERESTS & MOTIVATORS */}
+          {pView==="interests" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                CareerLeader Interest Profile — percentile rank vs 100,000+ business professionals
+              </div>
+              {SIDD_PROFILE.interests.map(int=>{
+                const color = int.pct >= 80 ? "#059669" : int.pct >= 50 ? "#D97706" : "#DC2626";
+                return (
+                  <div key={int.area} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"10px 16px", marginBottom:"5px"}}>
+                    <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:"4px"}}>
+                      <span style={{fontSize:"12px", fontWeight:600, color:TEXT}}>{int.area}</span>
+                      <span style={{fontSize:"12px", fontWeight:700, color, fontFamily:"'Courier New', monospace"}}>{int.pct}th</span>
+                    </div>
+                    <div style={{height:"5px", background:BORDER, borderRadius:"3px", overflow:"hidden"}}>
+                      <div style={{width:`${int.pct}%`, height:"100%", background:color, borderRadius:"3px"}}/>
+                    </div>
+                  </div>
+                );
+              })}
+              <div style={{marginTop:"16px", fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                Motivators — what drives career decisions (score /10)
+              </div>
+              <div style={{display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:"8px"}}>
+                {SIDD_PROFILE.motivators.map(m=>{
+                  const color = m.score >= 8 ? "#059669" : m.score >= 4 ? "#D97706" : "#DC2626";
+                  const bg = m.score >= 8 ? "#ECFDF5" : m.score >= 4 ? "#FFFBEB" : "#FEF2F2";
+                  return (
+                    <div key={m.name} style={{background:bg, borderRadius:"8px", padding:"12px", textAlign:"center", border:`1px solid ${color}25`}}>
+                      <div style={{fontSize:"22px", fontWeight:700, color, fontFamily:"'Courier New', monospace"}}>{m.score}</div>
+                      <div style={{fontSize:"10px", color:TEXT2, fontWeight:600, marginTop:"2px"}}>{m.name}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* SKILLS MAP */}
+          {pView==="skills" && (
+            <div style={{display:"grid", gridTemplateColumns:"1fr 1fr 1fr", gap:"12px"}}>
+              <div>
+                <div style={{fontSize:"10px", color:"#065F46", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px", textTransform:"uppercase"}}>Motivated Skills</div>
+                {SIDD_PROFILE.skills.motivated.map(s=>(
+                  <div key={s} style={{background:"#ECFDF5", border:"1px solid #A7F3D0", borderRadius:"6px", padding:"7px 10px", marginBottom:"4px", fontSize:"11px", color:"#065F46", fontWeight:500}}>{s}</div>
+                ))}
+              </div>
+              <div>
+                <div style={{fontSize:"10px", color:"#92400E", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px", textTransform:"uppercase"}}>Developmental Skills</div>
+                {SIDD_PROFILE.skills.developmental.map(s=>(
+                  <div key={s} style={{background:"#FFFBEB", border:"1px solid #FDE68A", borderRadius:"6px", padding:"7px 10px", marginBottom:"4px", fontSize:"11px", color:"#92400E", fontWeight:500}}>{s}</div>
+                ))}
+              </div>
+              <div>
+                <div style={{fontSize:"10px", color:"#991B1B", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px", textTransform:"uppercase"}}>Burnout Skills</div>
+                {SIDD_PROFILE.skills.burnout.map(s=>(
+                  <div key={s} style={{background:"#FEF2F2", border:"1px solid #FECACA", borderRadius:"6px", padding:"7px 10px", marginBottom:"4px", fontSize:"11px", color:"#991B1B", fontWeight:500}}>{s}</div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* EXPERIENCE */}
+          {pView==="experience" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                Work history — most recent first
+              </div>
+              {SIDD_PROFILE.experience.map((e,i)=>(
+                <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"9px", padding:"14px 16px", marginBottom:"8px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)", borderLeft:"3px solid #0891B2"}}>
+                  <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:"6px"}}>
+                    <div>
+                      <div style={{fontSize:"13px", fontWeight:700, color:TEXT}}>{e.role}</div>
+                      <div style={{fontSize:"11px", color:"#0891B2", fontWeight:600}}>{e.company}</div>
+                    </div>
+                    <span style={{fontSize:"10px", color:TEXT3, fontFamily:"'Courier New', monospace", whiteSpace:"nowrap"}}>{e.period}</span>
+                  </div>
+                  <div style={{display:"flex", gap:"6px", flexWrap:"wrap"}}>
+                    {e.highlights.map((h,j)=>(
+                      <span key={j} style={{fontSize:"10px", color:TEXT2, background:"#F9FAFB", padding:"3px 8px", borderRadius:"4px", border:`1px solid ${BORDER}`}}>{h}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {/* Education */}
+              <div style={{marginTop:"14px", fontSize:"10px", color:TEXT3, marginBottom:"8px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>Education</div>
+              {SIDD_PROFILE.education.map((ed,i)=>(
+                <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"7px", padding:"10px 14px", marginBottom:"5px", display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+                  <div>
+                    <div style={{fontSize:"12px", fontWeight:700, color:TEXT}}>{ed.degree}</div>
+                    <div style={{fontSize:"10px", color:TEXT3}}>{ed.school}</div>
+                  </div>
+                  <span style={{fontSize:"10px", color:TEXT3, fontFamily:"'Courier New', monospace"}}>{ed.year}</span>
+                </div>
+              ))}
+              {/* Financials */}
+              <div style={{marginTop:"14px", background:"#F0FDFA", border:"1px solid #99F6E4", borderRadius:"8px", padding:"14px 16px"}}>
+                <div style={{fontSize:"10px", color:"#0F766E", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>FINANCIAL ANCHORS</div>
+                <div style={{display:"grid", gridTemplateColumns:"repeat(4, 1fr)", gap:"8px"}}>
+                  {[["Floor",SIDD_PROFILE.financials.floor],["Anchor",SIDD_PROFILE.financials.anchor],["3yr Target",SIDD_PROFILE.financials.target3yr],["Dream",SIDD_PROFILE.financials.dream]].map(([l,v])=>(
+                    <div key={l} style={{textAlign:"center"}}>
+                      <div style={{fontSize:"12px", fontWeight:700, color:"#0F766E"}}>{v}</div>
+                      <div style={{fontSize:"9px", color:"#115E59", marginTop:"2px"}}>{l}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* CERTIFICATIONS */}
+          {pView==="certs" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                101+ courses completed — {Object.values(SIDD_PROFILE.certifications).reduce((a,c)=>a+c.count,0)} key certifications
+              </div>
+              {Object.entries(SIDD_PROFILE.certifications).map(([cat,data])=>{
+                const colors = {ai:{bg:"#EEF2FF",border:"#C7D2FE",text:"#4338CA"},marketing:{bg:"#FDF4FF",border:"#F0ABFC",text:"#7C3AED"},pm:{bg:"#F0FDFA",border:"#99F6E4",text:"#0F766E"},data:{bg:"#FFF7ED",border:"#FED7AA",text:"#C2410C"},creative:{bg:"#FEF2F2",border:"#FECACA",text:"#991B1B"},ux:{bg:"#FFFBEB",border:"#FDE68A",text:"#92400E"}};
+                const c = colors[cat]||colors.ai;
+                return (
+                  <div key={cat} style={{background:c.bg, border:`1px solid ${c.border}`, borderRadius:"9px", padding:"14px 16px", marginBottom:"8px"}}>
+                    <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:"8px"}}>
+                      <div style={{fontSize:"12px", fontWeight:700, color:c.text, textTransform:"capitalize"}}>{cat}</div>
+                      <span style={{fontSize:"11px", fontWeight:700, color:c.text, fontFamily:"'Courier New', monospace"}}>{data.count} certs</span>
+                    </div>
+                    <div style={{display:"flex", gap:"5px", flexWrap:"wrap"}}>
+                      {data.items.map(item=>(
+                        <span key={item} style={{fontSize:"10px", color:c.text, background:"rgba(255,255,255,0.7)", padding:"3px 8px", borderRadius:"4px", border:`1px solid ${c.border}`}}>{item}</span>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* ENERGY & BLINDSPOTS */}
+          {pView==="energy" && (
+            <div>
+              <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"12px", marginBottom:"14px"}}>
+                {/* Energizers */}
+                <div style={{background:"#ECFDF5", border:"1px solid #A7F3D0", borderRadius:"10px", padding:"16px"}}>
+                  <div style={{fontSize:"10px", color:"#065F46", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"10px"}}>ENERGIZERS (Flow States)</div>
+                  {SIDD_PROFILE.energizers.map(e=>(
+                    <div key={e} style={{display:"flex", gap:"8px", alignItems:"flex-start", marginBottom:"7px"}}>
+                      <div style={{width:"6px", height:"6px", borderRadius:"50%", background:"#10B981", marginTop:"5px", flexShrink:0}}/>
+                      <div style={{fontSize:"11px", color:"#065F46", lineHeight:1.4}}>{e}</div>
+                    </div>
+                  ))}
+                </div>
+                {/* Drainers */}
+                <div style={{background:"#FEF2F2", border:"1px solid #FECACA", borderRadius:"10px", padding:"16px"}}>
+                  <div style={{fontSize:"10px", color:"#991B1B", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"10px"}}>DRAINERS (Energy Sinks)</div>
+                  {SIDD_PROFILE.drainers.map(d=>(
+                    <div key={d} style={{display:"flex", gap:"8px", alignItems:"flex-start", marginBottom:"7px"}}>
+                      <div style={{width:"6px", height:"6px", borderRadius:"50%", background:"#EF4444", marginTop:"5px", flexShrink:0}}/>
+                      <div style={{fontSize:"11px", color:"#991B1B", lineHeight:1.4}}>{d}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Blindspots */}
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                8 blind spots — flagged across all assessments
+              </div>
+              {SIDD_PROFILE.blindSpots.map((b,i)=>(
+                <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 16px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                  <div style={{fontSize:"13px", fontWeight:700, color:"#DC2626", marginBottom:"4px"}}>{b.issue}</div>
+                  <div style={{fontSize:"11px", color:TEXT2, lineHeight:1.5}}>{b.fix}</div>
+                </div>
+              ))}
+
+              {/* Deal Breakers */}
+              <div style={{marginTop:"14px", background:"#FEF2F2", border:"1px solid #FECACA", borderRadius:"8px", padding:"14px 16px"}}>
+                <div style={{fontSize:"10px", color:"#991B1B", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>DEAL BREAKERS — HARD NO'S</div>
+                {SIDD_PROFILE.dealBreakers.map(d=>(
+                  <div key={d} style={{fontSize:"11px", color:"#991B1B", marginBottom:"4px"}}>✕ {d}</div>
+                ))}
+              </div>
+
+              {/* Work Style */}
+              <div style={{marginTop:"14px", background:"#F0FDFA", border:"1px solid #99F6E4", borderRadius:"8px", padding:"14px 16px"}}>
+                <div style={{fontSize:"10px", color:"#0F766E", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace", marginBottom:"8px"}}>WORK STYLE PREFERENCES</div>
+                <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"6px"}}>
+                  {Object.entries(SIDD_PROFILE.workStyle).map(([k,v])=>(
+                    <div key={k} style={{fontSize:"11px", lineHeight:1.4}}>
+                      <span style={{color:"#0F766E", fontWeight:700, textTransform:"capitalize"}}>{k.replace(/([A-Z])/g,' $1')}: </span>
+                      <span style={{color:"#115E59"}}>{v}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* FOOTER */}
       <div style={{marginTop:"24px", padding:"12px 16px", background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", display:"flex", gap:"14px", flexWrap:"wrap", alignItems:"center"}}>
         <span style={{fontSize:"9px", color:TEXT3, letterSpacing:"0.1em", textTransform:"uppercase", fontFamily:"'Courier New', monospace"}}>Legend</span>
@@ -1551,7 +1924,7 @@ export default function SiddRoleOS() {
             <span style={{fontSize:"10px", color:TEXT3}}>{m}</span>
           </div>
         ))}
-        <span style={{marginLeft:"auto", fontSize:"9px", color:TEXT3, fontFamily:"'Courier New', monospace"}}>📊 Master Rank · 🔍 Role Detail · 📈 Market Intel · 23 roles</span>
+        <span style={{marginLeft:"auto", fontSize:"9px", color:TEXT3, fontFamily:"'Courier New', monospace"}}>📊 Master Rank · 🔍 Role Detail · 📈 Market Intel · 👤 My Profile · 23 roles</span>
       </div>
     </div>
   );
