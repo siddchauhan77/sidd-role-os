@@ -17,6 +17,8 @@ const ROLES = [
     why:"Translates complexity into stories. MSBA + AI + writing + consulting all converge here.",
     redFlag:null,
     workflows:[
+      {task:"Review Slack and email for sales questions, launch blockers, and cross-team asks",type:"Human",freq:"Daily",cat:"Collab",tools:"Slack, Gmail, Notion"},
+      {task:"Write or edit positioning copy, one-pagers, or sales assets",type:"Hybrid",freq:"Daily",cat:"Writing",tools:"Claude, Google Docs, Figma"},
       {task:"Research ICP, buyer personas, market segments",type:"Hybrid",freq:"Monthly",cat:"Research",tools:"SparkToro, Claude, Typeform"},
       {task:"Write and maintain positioning and messaging doc",type:"Human",freq:"Quarterly",cat:"Strategy",tools:"Notion, Google Docs"},
       {task:"Own go-to-market strategy for launches",type:"Human",freq:"Quarterly",cat:"Strategy",tools:"Notion, Asana, Slides"},
@@ -57,6 +59,8 @@ const ROLES = [
     why:"You already do 70% of this at Bino. Direct overlap with photo, video, scripting, and client strategy.",
     redFlag:null,
     workflows:[
+      {task:"Review ad performance dashboards and flag winners/losers",type:"Hybrid",freq:"Daily",cat:"Analytics",tools:"Meta Ads Manager, Triple Whale"},
+      {task:"Write or iterate ad copy and hook variations",type:"Hybrid",freq:"Daily",cat:"Writing",tools:"Claude, Google Docs, Figma"},
       {task:"Analyze briefs and audience data",type:"AI",freq:"Weekly",cat:"Research",tools:"Meta Ad Library, SparkToro"},
       {task:"Lead competitor ad teardowns",type:"Hybrid",freq:"Weekly",cat:"Research",tools:"Meta Ad Library, MagicBrief"},
       {task:"Generate campaign angles and hooks",type:"Hybrid",freq:"Weekly",cat:"Ideation",tools:"Claude, Notion, whiteboard"},
@@ -97,6 +101,8 @@ const ROLES = [
     why:"Fastest door in. Directly overlaps ghostwriting, newsletter, and email marketing background.",
     redFlag:null,
     workflows:[
+      {task:"Write, edit, or publish content pieces (blog, social, email)",type:"Hybrid",freq:"Daily",cat:"Writing",tools:"Claude, Google Docs, CMS"},
+      {task:"Engage audience on social and respond to comments/DMs",type:"Human",freq:"Daily",cat:"Distribution",tools:"LinkedIn, Twitter/X, Buffer"},
       {task:"Develop and own content marketing strategy",type:"Human",freq:"Quarterly",cat:"Strategy",tools:"Notion, Miro"},
       {task:"Build and manage editorial content calendar",type:"Hybrid",freq:"Weekly",cat:"Strategy",tools:"Notion, Airtable, Claude"},
       {task:"Write long-form blog posts, whitepapers, case studies",type:"Hybrid",freq:"Weekly",cat:"Writing",tools:"Claude, Google Docs, SurferSEO"},
@@ -215,6 +221,8 @@ const ROLES = [
     why:"Analytics + content + strategy. MSBA data skills meet marketing instincts. Good PMM bridge role.",
     redFlag:null,
     workflows:[
+      {task:"Check experiment dashboards, ad spend, and funnel metrics",type:"Hybrid",freq:"Daily",cat:"Analytics",tools:"Amplitude, Meta Ads, Looker"},
+      {task:"Triage and respond to campaign performance alerts",type:"Hybrid",freq:"Daily",cat:"Paid",tools:"Slack, Meta Ads, Google Ads"},
       {task:"Design and run growth experiments (A/B tests)",type:"Hybrid",freq:"Weekly",cat:"Experiments",tools:"Optimizely, VWO, Notion"},
       {task:"Analyze funnel data and identify drop-offs",type:"Hybrid",freq:"Weekly",cat:"Analytics",tools:"Amplitude, Mixpanel, SQL"},
       {task:"Write and test landing page copy variants",type:"Hybrid",freq:"Weekly",cat:"Writing",tools:"Claude, Webflow, Unbounce"},
@@ -289,6 +297,8 @@ const ROLES = [
     why:"n8n + automation + MSBA analytics = strong fit for the technical side. But the daily work is systems, not storytelling.",
     redFlag:"Energy check: daily work is tool configuration and reporting. Not storytelling. Watch this.",
     workflows:[
+      {task:"Monitor automation workflows, fix broken triggers, and check lead flow",type:"Hybrid",freq:"Daily",cat:"Systems",tools:"HubSpot, Salesforce, Slack"},
+      {task:"Respond to campaign ops requests from demand gen and sales",type:"Human",freq:"Daily",cat:"Collab",tools:"Slack, Jira, HubSpot"},
       {task:"Manage and configure marketing tech stack (HubSpot, Salesforce)",type:"Hybrid",freq:"Weekly",cat:"Systems",tools:"HubSpot, Salesforce, Notion"},
       {task:"Build and maintain marketing automation workflows",type:"Hybrid",freq:"Weekly",cat:"Automation",tools:"n8n, HubSpot, Zapier, Make"},
       {task:"Build dashboards and performance reports",type:"Hybrid",freq:"Weekly",cat:"Analytics",tools:"Looker, Power BI, HubSpot"},
@@ -325,6 +335,8 @@ const ROLES = [
     why:"Natural fit for visual storytelling background. Positioning + identity work. Best as year 2 move after PMM.",
     redFlag:null,
     workflows:[
+      {task:"Review creative assets for brand consistency and approve requests",type:"Human",freq:"Daily",cat:"Production",tools:"Figma, Slack, Canva"},
+      {task:"Monitor social channels and cultural trends for brand relevance",type:"AI",freq:"Daily",cat:"Research",tools:"Twitter/X, TikTok, Instagram, Google Trends"},
       {task:"Run brand audit and competitive positioning",type:"Hybrid",freq:"Quarterly",cat:"Research",tools:"Claude, Perplexity, Miro"},
       {task:"Research audience, culture, and behavioral trends",type:"Hybrid",freq:"Monthly",cat:"Research",tools:"SparkToro, Reddit, TikTok"},
       {task:"Build brand identity framework (voice, values, tone)",type:"Human",freq:"Quarterly",cat:"Strategy",tools:"Notion, Miro, workshops"},
@@ -361,6 +373,8 @@ const ROLES = [
     why:"93rd percentile Theory Development. Built email courses with 30%+ opt-in. Best at AI or ed-tech companies.",
     redFlag:null,
     workflows:[
+      {task:"Review learner feedback, support tickets, and course completion data",type:"Hybrid",freq:"Daily",cat:"Analytics",tools:"LMS, Notion, Slack"},
+      {task:"Update or refine lesson content, quizzes, and module assets",type:"Hybrid",freq:"Daily",cat:"Production",tools:"Articulate 360, Rise, Figma"},
       {task:"Conduct learner needs analysis and gap assessment",type:"Hybrid",freq:"Quarterly",cat:"Research",tools:"Surveys, Typeform, Notion"},
       {task:"Write learning objectives and curriculum map",type:"Human",freq:"Monthly",cat:"Strategy",tools:"Notion, Google Docs"},
       {task:"Design course structure and module flow",type:"Human",freq:"Monthly",cat:"Strategy",tools:"Miro, Notion, Figma"},
@@ -397,6 +411,8 @@ const ROLES = [
     why:"Viable with MSBA + Accenture. Execution-heavy. Best at learning or HR tech companies.",
     redFlag:"Energy check: 60% of the job is sprint ceremonies, ticket writing, and backlog management.",
     workflows:[
+      {task:"Triage bugs, feature requests, and customer feedback in backlog",type:"Human",freq:"Daily",cat:"Strategy",tools:"Linear, Jira, Slack"},
+      {task:"Run or attend standups and unblock engineering tasks",type:"Human",freq:"Daily",cat:"Collab",tools:"Slack, Linear, Zoom"},
       {task:"Conduct user research and synthesize insights",type:"Hybrid",freq:"Weekly",cat:"Research",tools:"Dovetail, UserTesting, Zoom"},
       {task:"Write PRDs, feature specs, and user stories",type:"Hybrid",freq:"Weekly",cat:"Writing",tools:"Notion, Confluence, Claude"},
       {task:"Manage and prioritize product backlog",type:"Human",freq:"Weekly",cat:"Strategy",tools:"Linear, Jira, Productboard"},
@@ -467,6 +483,8 @@ const ROLES = [
     why:"Systems thinking + MSBA + Accenture process work. High demand 2025–26. But execution-heavy and creativity-light.",
     redFlag:"Energy check: daily work is process optimization and tool management. Drains creative energy over time.",
     workflows:[
+      {task:"Check product health dashboards and flag anomalies to PM team",type:"Hybrid",freq:"Daily",cat:"Analytics",tools:"Amplitude, Looker, Slack"},
+      {task:"Respond to ops requests from PMs, designers, and engineers",type:"Human",freq:"Daily",cat:"Collab",tools:"Slack, Linear, Notion"},
       {task:"Build and maintain product analytics dashboards",type:"Hybrid",freq:"Weekly",cat:"Analytics",tools:"Amplitude, Mixpanel, Looker, SQL"},
       {task:"Document product processes and playbooks",type:"Hybrid",freq:"Monthly",cat:"Writing",tools:"Notion, Confluence, Claude"},
       {task:"Coordinate cross-functional product reviews",type:"Human",freq:"Weekly",cat:"Collab",tools:"Notion, Slides, Zoom"},
@@ -601,6 +619,8 @@ const ROLES = [
     why:"Previous role at Accenture. Data analyst in a different outfit. Got paid for it doesn't mean best fit.",
     redFlag:"RED DRESS. Your strongest technical trap. Skip unless it's clearly a bridge to PMM within 6 months.",
     workflows:[
+      {task:"Attend stakeholder meetings, take notes, and clarify requirements",type:"Human",freq:"Daily",cat:"Collab",tools:"Zoom, Notion, Confluence"},
+      {task:"Update requirements docs, Jira tickets, and status trackers",type:"Hybrid",freq:"Daily",cat:"Writing",tools:"Jira, Confluence, Notion"},
       {task:"Gather and document business requirements",type:"Human",freq:"Weekly",cat:"Research",tools:"Notion, Confluence, Visio"},
       {task:"Map current and future processes",type:"Hybrid",freq:"Weekly",cat:"Strategy",tools:"Miro, Visio, Notion"},
       {task:"Write user stories and acceptance criteria",type:"Hybrid",freq:"Weekly",cat:"Writing",tools:"Jira, Notion, Confluence"},
@@ -712,6 +732,8 @@ const ROLES = [
     why:"Bridge role between business and AI implementation. Your MSBA + 35 AI apps + consulting background make this a natural fit.",
     redFlag:null,
     workflows:[
+      {task:"Monitor AI tool usage, troubleshoot issues, and respond to team requests",type:"Hybrid",freq:"Daily",cat:"Systems",tools:"Slack, dashboards, Notion"},
+      {task:"Test and iterate on AI prompts, workflows, and automations",type:"Hybrid",freq:"Daily",cat:"Engineering",tools:"Claude, Zapier, Make, Python"},
       {task:"Audit existing workflows for AI automation opportunities",type:"Hybrid",freq:"Monthly",cat:"Strategy",tools:"Notion, Miro, Claude"},
       {task:"Design and implement AI-powered process improvements",type:"Hybrid",freq:"Weekly",cat:"Strategy",tools:"Claude, Zapier, Make, Python"},
       {task:"Manage AI tool stack selection and vendor evaluation",type:"Human",freq:"Monthly",cat:"Research",tools:"G2, vendor demos, Notion"},
@@ -749,6 +771,8 @@ const ROLES = [
     why:"Accenture consulting DNA + MSBA + hands-on AI building = rare hybrid. You can advise AND demo. Most consultants can't.",
     redFlag:null,
     workflows:[
+      {task:"Build and test AI prototypes, prompts, and demo workflows for clients",type:"Hybrid",freq:"Daily",cat:"Engineering",tools:"Claude, Python, Cursor, APIs"},
+      {task:"Respond to client questions, prep meeting materials, and update project trackers",type:"Human",freq:"Daily",cat:"Collab",tools:"Slack, Notion, Gmail, Slides"},
       {task:"Conduct AI readiness assessments for clients",type:"Hybrid",freq:"Monthly",cat:"Research",tools:"Notion, Miro, Claude, surveys"},
       {task:"Identify and prioritize AI use cases by business impact",type:"Hybrid",freq:"Monthly",cat:"Strategy",tools:"Miro, Claude, Excel"},
       {task:"Build AI proof-of-concepts and demos",type:"Hybrid",freq:"Weekly",cat:"Engineering",tools:"Claude, Python, Cursor, APIs"},
