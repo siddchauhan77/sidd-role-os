@@ -839,6 +839,97 @@ const ROLES = [
   },
 ];
 
+// ─── MARKET INTEL DATA ────────────────────────────────────────────────────────
+const MARKET_DATA = {
+  sources:["Coursera Job Skills Report 2026","WEF Future of Jobs 2025","LinkedIn Skills on the Rise 2025/2026","Robert Half 2026 Salary Guide","ISC2 Cybersecurity Workforce Study"],
+  technicalSkills:[
+    {rank:1, skill:"AI & Big Data Literacy", cat:"AI/ML", signal:"86% of employers cite as #1 transformation driver", source:"WEF"},
+    {rank:2, skill:"AI Engineering / LLM Development", cat:"AI/ML", signal:"Job postings up 70%+ YoY; LinkedIn #1 for 2026", source:"LinkedIn"},
+    {rank:3, skill:"Cybersecurity & Data Protection", cat:"Security", signal:"4.8M unfilled roles globally", source:"ISC2"},
+    {rank:4, skill:"Cloud Computing & Architecture", cat:"Cloud", signal:"41% of tech leaders pay premiums for it", source:"Robert Half"},
+    {rank:5, skill:"Networks & Infrastructure", cat:"Cloud/Infra", signal:"WEF top 3 fastest-growing technical cluster", source:"WEF"},
+    {rank:6, skill:"Data Science & Analytics", cat:"Data", signal:"Data Scientist salaries growing 4.1%/yr", source:"Robert Half"},
+    {rank:7, skill:"Technology Literacy", cat:"Digital", signal:"WEF core competency for 2025–2030", source:"WEF"},
+    {rank:8, skill:"Prompt Engineering", cat:"AI/ML", signal:"LinkedIn 2026 Skills on the Rise", source:"LinkedIn"},
+    {rank:9, skill:"Regulatory Compliance & Governance", cat:"Risk/Legal", signal:"Growing with AI regulation wave (EU AI Act)", source:"LinkedIn"},
+    {rank:10, skill:"Risk Assessment", cat:"Security/Ops", signal:"LinkedIn #15 for 2025, rising fast", source:"LinkedIn"},
+  ],
+  softSkills:[
+    {rank:1, skill:"AI Literacy (Applied)", signal:"Required across all roles as AI tools proliferate"},
+    {rank:2, skill:"Conflict Mitigation", signal:"Human skill AI cannot replace; rising team complexity"},
+    {rank:3, skill:"Adaptability", signal:"Top-5 both WEF and LinkedIn; pace of change"},
+    {rank:4, skill:"Process Optimization", signal:"Operational efficiency pressure post-layoffs"},
+    {rank:5, skill:"Innovative Thinking", signal:"Creative problem-solving as AI displaces routine work"},
+    {rank:6, skill:"Public Speaking", signal:"Cross-functional communication; LinkedIn 2026 focus"},
+    {rank:7, skill:"Stakeholder Management", signal:"Growing cross-functional project complexity"},
+    {rank:8, skill:"Analytical Thinking", signal:"WEF #1 cognitive skill for 2025–2030"},
+    {rank:9, skill:"Resilience & Agility", signal:"WEF top behavioral skill"},
+    {rank:10, skill:"Curiosity & Lifelong Learning", signal:"WEF explicitly named for 2025–2030"},
+  ],
+  fastestRoles:[
+    {rank:1, role:"AI & Machine Learning Specialist", driver:"Generative AI adoption", growth:"82%", type:"tech"},
+    {rank:2, role:"Big Data & Analytics Expert", driver:"Data-driven decision-making", growth:"113%", type:"tech"},
+    {rank:3, role:"Renewable Energy Engineer", driver:"Green transition mandates", growth:"N/A", type:"green"},
+    {rank:4, role:"Cybersecurity Specialist", driver:"Expanding threat surface", growth:"33%", type:"tech"},
+    {rank:5, role:"EV & Autonomous Vehicle Tech", driver:"EV adoption wave", growth:"N/A", type:"green"},
+    {rank:6, role:"Sustainability / ESG Manager", driver:"Regulatory + investor pressure", growth:"N/A", type:"green"},
+    {rank:7, role:"IoT Specialist", driver:"Connected device proliferation", growth:"N/A", type:"tech"},
+    {rank:8, role:"Robotics & Automation Engineer", driver:"Manufacturing automation", growth:"N/A", type:"tech"},
+    {rank:9, role:"Cloud Computing Expert", driver:"Continued cloud migration", growth:"N/A", type:"tech"},
+    {rank:10, role:"Education Professional", driver:"Reskilling economy demand", growth:"N/A", type:"other"},
+  ],
+  salaryBenchmarks:[
+    {role:"Cloud Infrastructure Engineer", median:189000, yoy:4.5},
+    {role:"AI / ML Engineer", median:170750, yoy:4.4},
+    {role:"Data Scientist", median:153750, yoy:4.1},
+    {role:"DevOps / SRE Engineer", median:145750, yoy:3.0},
+    {role:"Cybersecurity Engineer", median:144000, yoy:4.0},
+    {role:"Data Analyst", median:117250, yoy:3.3},
+    {role:"Senior Prompt Engineer", median:200000, yoy:null},
+  ],
+  skillPremiums:[
+    {skill:"1 AI skill on job posting", pct:28, note:"+$18K/yr avg"},
+    {skill:"2+ AI skills on posting", pct:43, note:"Compounding premium"},
+    {skill:"AI/ML & Data Science", pct:18, note:"59% of leaders pay extra"},
+    {skill:"Cybersecurity", pct:15.4, note:"52% of leaders pay extra"},
+    {skill:"Cloud & Infrastructure", pct:14.5, note:"41% of leaders pay extra"},
+  ],
+  skillsGap:[
+    {stat:"4.8M", label:"Cybersecurity roles unfilled globally", color:"#DC2626"},
+    {stat:"$5.5T", label:"Global IT shortage cost by 2026", color:"#EA580C"},
+    {stat:"39%", label:"Current skills obsolete by 2030 (WEF)", color:"#D97706"},
+    {stat:"+78M", label:"Net new jobs by 2030 (WEF)", color:"#059669"},
+    {stat:"70%+", label:"AI literacy job posting growth YoY", color:"#4F46E5"},
+    {stat:"195%", label:"GenAI course enrollment growth YoY", color:"#7C3AED"},
+  ],
+  courseraTrends:{
+    data:[
+      {rank:1, skill:"Multimodal Prompts", yoy:null},
+      {rank:2, skill:"Critical Thinking", yoy:168},
+      {rank:3, skill:"AI Personalization", yoy:null},
+      {rank:4, skill:"Prompt Engineering", yoy:null},
+      {rank:5, skill:"Excel Formulas", yoy:null},
+      {rank:6, skill:"Responsible AI", yoy:null},
+      {rank:7, skill:"Natural Language Processing", yoy:null},
+      {rank:8, skill:"Automation", yoy:107},
+      {rank:9, skill:"Information Privacy", yoy:null},
+      {rank:10, skill:"Large Language Modeling", yoy:null},
+    ],
+    keyGrowth:[
+      {skill:"GenAI enrollments (Data)", yoy:188},
+      {skill:"PyTorch", yoy:177},
+      {skill:"Critical Thinking", yoy:168},
+      {skill:"Data-Driven Decision Making", yoy:126},
+      {skill:"Data Quality", yoy:108},
+      {skill:"Automation", yoy:107},
+      {skill:"Data Cleansing", yoy:103},
+      {skill:"Critical Thinking (IT)", yoy:91},
+      {skill:"Critical Thinking (SW Dev)", yoy:101},
+      {skill:"Critical Thinking (GenAI)", yoy:185},
+    ],
+  },
+};
+
 // ─── STYLE TOKENS ─────────────────────────────────────────────────────────────
 const BG     = "#F8F7F4";
 const CARD   = "#FFFFFF";
@@ -888,6 +979,7 @@ export default function SiddRoleOS() {
   const [typeF, setTypeF]         = useState("All");
   const [freqF, setFreqF]         = useState("All");
   const [senLevel, setSenLevel]   = useState("mid");
+  const [mView, setMView]         = useState("technical");
 
   const role = ROLES.find(r => r.id === activeId);
   const tier = TIER_STYLE[role.tier];
@@ -943,11 +1035,10 @@ export default function SiddRoleOS() {
       {/* HEADER */}
       <div style={{marginBottom:"22px", paddingBottom:"16px", borderBottom:`2px solid ${BORDER}`}}>
         <div style={{fontSize:"10px", letterSpacing:"0.2em", color:TEXT3, textTransform:"uppercase", marginBottom:"6px", fontFamily:"'Courier New', monospace"}}>
-          Sidd's Role OS — 20 Roles Ranked
+          Sidd's Role OS — 23 Roles Ranked
         </div>
         <div style={{fontSize:"22px", fontWeight:700, lineHeight:1.25, color:TEXT, fontFamily:"Georgia, serif"}}>
-          What does the job actually demand?<br/>
-          <span style={{color:role.color}}>JD-sourced. Proof points mapped. Rank ordered.</span>
+          {view==="market" ? <>What skills does the market demand?<br/><span style={{color:"#4F46E5"}}>Multi-source research. 2025–2026 data. Updated live.</span></> : <>What does the job actually demand?<br/><span style={{color:role.color}}>JD-sourced. Proof points mapped. Rank ordered.</span></>}
         </div>
       </div>
 
@@ -955,6 +1046,7 @@ export default function SiddRoleOS() {
       <div style={{display:"flex", gap:"8px", marginBottom:"18px"}}>
         {btn(view==="master", "#1A1A1A", ()=>setView("master"), "📊 Master Rank")}
         {btn(view==="detail", role.color, ()=>setView("detail"), "🔍 Role Detail")}
+        {btn(view==="market", "#4F46E5", ()=>setView("market"), "📈 Market Intel")}
         {view==="detail" && <span style={{marginLeft:"auto", fontSize:"11px", color:TEXT3, alignSelf:"center", fontFamily:"'Courier New', monospace"}}>Viewing: {role.short}</span>}
       </div>
 
@@ -1226,6 +1318,224 @@ export default function SiddRoleOS() {
         </div>
       )}
 
+      {/* ── MARKET INTEL ── */}
+      {view==="market" && (
+        <div>
+          {/* Sub-nav */}
+          <div style={{display:"flex", gap:"6px", marginBottom:"16px", flexWrap:"wrap"}}>
+            {[["technical","Top Technical Skills"],["soft","Top Soft Skills"],["roles","Fastest-Growing Roles"],["salary","Salary Premiums"],["gap","Skills Gap"],["coursera","Coursera Trends"]].map(([v,label])=>(
+              <button key={v} onClick={()=>setMView(v)} style={{
+                padding:"7px 14px", borderRadius:"6px", cursor:"pointer",
+                border: mView===v ? "1.5px solid #4F46E5" : `1.5px solid ${BORDER}`,
+                background: mView===v ? "#4F46E5" : CARD,
+                color: mView===v ? "#FFF" : TEXT2,
+                fontSize:"11px", fontWeight:600, letterSpacing:"0.02em", transition:"all 0.12s",
+              }}>{label}</button>
+            ))}
+          </div>
+
+          {/* Source banner */}
+          <div style={{display:"flex", gap:"6px", flexWrap:"wrap", marginBottom:"14px", padding:"8px 12px", background:"#EEF2FF", borderRadius:"7px", border:"1px solid #C7D2FE", alignItems:"center"}}>
+            <span style={{fontSize:"9px", color:"#4338CA", fontWeight:700, letterSpacing:"0.08em", fontFamily:"'Courier New', monospace"}}>SOURCES:</span>
+            {MARKET_DATA.sources.map(s=>(
+              <span key={s} style={{fontSize:"9px", color:"#6366F1", background:"#FFF", padding:"2px 6px", borderRadius:"3px", border:"1px solid #E0E7FF"}}>{s}</span>
+            ))}
+          </div>
+
+          {/* TECHNICAL SKILLS */}
+          {mView==="technical" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                10 most in-demand technical skills — 2025/2026
+              </div>
+              {MARKET_DATA.technicalSkills.map(s=>{
+                const catColors = {
+                  "AI/ML":{bg:"#EEF2FF",text:"#4338CA",border:"#C7D2FE"},
+                  "Security":{bg:"#FEF2F2",text:"#991B1B",border:"#FECACA"},
+                  "Cloud":{bg:"#F0FDFA",text:"#0F766E",border:"#99F6E4"},
+                  "Cloud/Infra":{bg:"#F0FDFA",text:"#0F766E",border:"#99F6E4"},
+                  "Data":{bg:"#FFF7ED",text:"#C2410C",border:"#FED7AA"},
+                  "Digital":{bg:"#F9FAFB",text:"#4B5563",border:"#E5E7EB"},
+                  "Risk/Legal":{bg:"#FDF4FF",text:"#86198F",border:"#F0ABFC"},
+                  "Security/Ops":{bg:"#FEF2F2",text:"#991B1B",border:"#FECACA"},
+                };
+                const cc = catColors[s.cat]||catColors["Digital"];
+                const barW = ((11-s.rank)/10)*100;
+                return (
+                  <div key={s.rank} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"9px", padding:"13px 16px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                    <div style={{display:"grid", gridTemplateColumns:"28px 1fr auto", gap:"10px", alignItems:"center"}}>
+                      <div style={{fontSize:"13px", fontWeight:700, color:TEXT3, fontFamily:"'Courier New', monospace"}}>#{s.rank}</div>
+                      <div>
+                        <div style={{fontSize:"13px", fontWeight:700, color:TEXT, marginBottom:"4px"}}>{s.skill}</div>
+                        <div style={{display:"flex", gap:"6px", alignItems:"center", marginBottom:"4px"}}>
+                          <div style={{width:"80px", height:"4px", background:BORDER, borderRadius:"2px", overflow:"hidden"}}>
+                            <div style={{width:`${barW}%`, height:"100%", background:"#4F46E5", borderRadius:"2px"}}/>
+                          </div>
+                          <Chip bg={cc.bg} text={cc.text} border={cc.border} small>{s.cat}</Chip>
+                        </div>
+                        <div style={{fontSize:"10px", color:TEXT3}}>{s.signal}</div>
+                      </div>
+                      <span style={{fontSize:"9px", color:TEXT3, background:"#F9FAFB", padding:"2px 6px", borderRadius:"3px", border:`1px solid ${BORDER}`, fontFamily:"'Courier New', monospace"}}>{s.source}</span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* SOFT SKILLS */}
+          {mView==="soft" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                10 most in-demand soft & business skills — 2025/2026
+              </div>
+              {MARKET_DATA.softSkills.map(s=>(
+                <div key={s.rank} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 16px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                  <div style={{display:"flex", gap:"10px", alignItems:"center"}}>
+                    <div style={{fontSize:"13px", fontWeight:700, color:TEXT3, fontFamily:"'Courier New', monospace", width:"28px"}}>#{s.rank}</div>
+                    <div style={{flex:1}}>
+                      <div style={{fontSize:"13px", fontWeight:600, color:TEXT, marginBottom:"3px"}}>{s.skill}</div>
+                      <div style={{fontSize:"10px", color:TEXT3}}>{s.signal}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* FASTEST-GROWING ROLES */}
+          {mView==="roles" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                WEF fastest-growing roles through 2030 — +78M net new jobs
+              </div>
+              {MARKET_DATA.fastestRoles.map(r=>{
+                const typeC = r.type==="tech" ? {bg:"#EEF2FF",text:"#4338CA",border:"#C7D2FE"} : r.type==="green" ? {bg:"#ECFDF5",text:"#065F46",border:"#A7F3D0"} : {bg:"#F9FAFB",text:"#6B7280",border:"#E5E7EB"};
+                return (
+                  <div key={r.rank} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"9px", padding:"13px 16px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                    <div style={{display:"grid", gridTemplateColumns:"28px 1fr auto auto", gap:"10px", alignItems:"center"}}>
+                      <div style={{fontSize:"13px", fontWeight:700, color:TEXT3, fontFamily:"'Courier New', monospace"}}>#{r.rank}</div>
+                      <div>
+                        <div style={{fontSize:"13px", fontWeight:700, color:TEXT, marginBottom:"3px"}}>{r.role}</div>
+                        <div style={{fontSize:"10px", color:TEXT3}}>{r.driver}</div>
+                      </div>
+                      {r.growth!=="N/A" && <span style={{fontSize:"11px", fontWeight:700, color:"#059669", fontFamily:"'Courier New', monospace"}}>+{r.growth}</span>}
+                      <Chip bg={typeC.bg} text={typeC.text} border={typeC.border} small>{r.type.toUpperCase()}</Chip>
+                    </div>
+                  </div>
+                );
+              })}
+              <div style={{marginTop:"12px", padding:"10px 14px", background:"#FEF2F2", borderRadius:"7px", border:"1px solid #FECACA"}}>
+                <div style={{fontSize:"10px", fontWeight:700, color:"#991B1B", marginBottom:"6px", fontFamily:"'Courier New', monospace"}}>FASTEST-DECLINING ROLES</div>
+                <div style={{fontSize:"11px", color:"#991B1B", lineHeight:1.6}}>Data Entry Clerks · Cashiers · Bank Tellers · Telemarketers · Postal Clerks · Administrative Assistants · Printing Workers · Graphic Designers (AI automation)</div>
+              </div>
+            </div>
+          )}
+
+          {/* SALARY PREMIUMS */}
+          {mView==="salary" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                2026 salary benchmarks & AI skill premiums — Robert Half + LinkedIn
+              </div>
+              {MARKET_DATA.salaryBenchmarks.map((s,i)=>{
+                const barW = (s.median/200000)*100;
+                return (
+                  <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 16px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                    <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:"6px"}}>
+                      <div style={{fontSize:"13px", fontWeight:600, color:TEXT}}>{s.role}</div>
+                      <div style={{fontSize:"14px", fontWeight:700, color:"#059669", fontFamily:"'Courier New', monospace"}}>${(s.median/1000).toFixed(0)}K</div>
+                    </div>
+                    <div style={{display:"flex", gap:"8px", alignItems:"center"}}>
+                      <div style={{flex:1, height:"6px", background:BORDER, borderRadius:"3px", overflow:"hidden"}}>
+                        <div style={{width:`${barW}%`, height:"100%", background:"linear-gradient(90deg, #059669, #10B981)", borderRadius:"3px"}}/>
+                      </div>
+                      {s.yoy && <span style={{fontSize:"10px", color:"#059669", fontWeight:600, whiteSpace:"nowrap"}}>+{s.yoy}% YoY</span>}
+                    </div>
+                  </div>
+                );
+              })}
+              <div style={{marginTop:"16px", fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                AI Skill Salary Premiums
+              </div>
+              {MARKET_DATA.skillPremiums.map((p,i)=>(
+                <div key={i} style={{background:"#EEF2FF", border:"1px solid #C7D2FE", borderRadius:"8px", padding:"12px 16px", marginBottom:"6px"}}>
+                  <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
+                    <div>
+                      <div style={{fontSize:"13px", fontWeight:600, color:"#312E81"}}>{p.skill}</div>
+                      <div style={{fontSize:"10px", color:"#6366F1", marginTop:"2px"}}>{p.note}</div>
+                    </div>
+                    <div style={{fontSize:"20px", fontWeight:700, color:"#4F46E5", fontFamily:"'Courier New', monospace"}}>+{p.pct}%</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* SKILLS GAP */}
+          {mView==="gap" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                The global skills gap — why upskilling matters now
+              </div>
+              <div style={{display:"grid", gridTemplateColumns:"repeat(2, 1fr)", gap:"10px", marginBottom:"16px"}}>
+                {MARKET_DATA.skillsGap.map((g,i)=>(
+                  <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"10px", padding:"18px 16px", boxShadow:"0 1px 3px rgba(0,0,0,0.05)", textAlign:"center"}}>
+                    <div style={{fontSize:"28px", fontWeight:700, color:g.color, fontFamily:"'Courier New', monospace", marginBottom:"6px"}}>{g.stat}</div>
+                    <div style={{fontSize:"11px", color:TEXT2, lineHeight:1.4}}>{g.label}</div>
+                  </div>
+                ))}
+              </div>
+              <div style={{background:"#FFFBEB", border:"1px solid #FDE68A", borderRadius:"8px", padding:"14px 16px"}}>
+                <div style={{fontSize:"11px", fontWeight:700, color:"#92400E", marginBottom:"6px"}}>Key Insight</div>
+                <div style={{fontSize:"12px", color:"#78350F", lineHeight:1.6}}>
+                  87% of tech leaders say they pay more for specialized skills. Organizations with high skills shortages face average breach costs of $5.22M — $1.57M more than organizations with low skill gaps. The cost of not upskilling is now measurably higher than the cost of training.
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* COURSERA TRENDS */}
+          {mView==="coursera" && (
+            <div>
+              <div style={{fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                Coursera 2026 — fastest-growing data skills (6M enterprise learners)
+              </div>
+              {MARKET_DATA.courseraTrends.data.map(s=>(
+                <div key={s.rank} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"12px 16px", marginBottom:"6px", boxShadow:"0 1px 3px rgba(0,0,0,0.04)"}}>
+                  <div style={{display:"flex", gap:"10px", alignItems:"center"}}>
+                    <div style={{fontSize:"13px", fontWeight:700, color:TEXT3, fontFamily:"'Courier New', monospace", width:"28px"}}>#{s.rank}</div>
+                    <div style={{flex:1, fontSize:"13px", fontWeight:600, color:TEXT}}>{s.skill}</div>
+                    {s.yoy && <span style={{fontSize:"11px", fontWeight:700, color:"#059669", fontFamily:"'Courier New', monospace"}}>+{s.yoy}% YoY</span>}
+                  </div>
+                </div>
+              ))}
+              <div style={{marginTop:"16px", fontSize:"10px", color:TEXT3, marginBottom:"10px", fontFamily:"'Courier New', monospace", textTransform:"uppercase", letterSpacing:"0.08em"}}>
+                Highest YoY enrollment growth across all career areas
+              </div>
+              {MARKET_DATA.courseraTrends.keyGrowth.map((s,i)=>{
+                const barW = (s.yoy/200)*100;
+                return (
+                  <div key={i} style={{background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", padding:"10px 16px", marginBottom:"5px"}}>
+                    <div style={{display:"flex", gap:"10px", alignItems:"center"}}>
+                      <div style={{flex:1, fontSize:"12px", color:TEXT2}}>{s.skill}</div>
+                      <div style={{width:"100px", height:"4px", background:BORDER, borderRadius:"2px", overflow:"hidden"}}>
+                        <div style={{width:`${Math.min(barW,100)}%`, height:"100%", background:"#7C3AED", borderRadius:"2px"}}/>
+                      </div>
+                      <span style={{fontSize:"11px", fontWeight:700, color:"#7C3AED", fontFamily:"'Courier New', monospace", width:"60px", textAlign:"right"}}>+{s.yoy}%</span>
+                    </div>
+                  </div>
+                );
+              })}
+              <div style={{marginTop:"12px", background:"#F0FDFA", border:"1px solid #99F6E4", borderRadius:"8px", padding:"12px 16px"}}>
+                <div style={{fontSize:"11px", fontWeight:700, color:"#0F766E", marginBottom:"4px"}}>GenAI is now the #1 skill in Coursera's history</div>
+                <div style={{fontSize:"11px", color:"#115E59", lineHeight:1.5}}>14 enrollments per minute in 1,000+ GenAI courses (up from 8/min last year). 88% of leaders believe AI investments will fail without parallel training investment.</div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* FOOTER */}
       <div style={{marginTop:"24px", padding:"12px 16px", background:CARD, border:`1px solid ${BORDER}`, borderRadius:"8px", display:"flex", gap:"14px", flexWrap:"wrap", alignItems:"center"}}>
         <span style={{fontSize:"9px", color:TEXT3, letterSpacing:"0.1em", textTransform:"uppercase", fontFamily:"'Courier New', monospace"}}>Legend</span>
@@ -1241,7 +1551,7 @@ export default function SiddRoleOS() {
             <span style={{fontSize:"10px", color:TEXT3}}>{m}</span>
           </div>
         ))}
-        <span style={{marginLeft:"auto", fontSize:"9px", color:TEXT3, fontFamily:"'Courier New', monospace"}}>📊 Master Rank · 🔍 Role Detail · 5 tabs per role · 20 roles total</span>
+        <span style={{marginLeft:"auto", fontSize:"9px", color:TEXT3, fontFamily:"'Courier New', monospace"}}>📊 Master Rank · 🔍 Role Detail · 📈 Market Intel · 23 roles</span>
       </div>
     </div>
   );
